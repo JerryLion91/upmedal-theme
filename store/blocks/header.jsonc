@@ -5,10 +5,17 @@
   "header.full": {
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
+  // commum
+  "flex-layout.col#minicart": {
+    "props": {
+      "horizontalAlign": "center",
+      "width": "30%"
+    },
+    "children": ["minicart.v2"]
+  },
+  // Desktop:
   "header-layout.desktop": {
-    "children": [
-      "sticky-layout#desktop"
-    ]
+    "children": ["sticky-layout#desktop"]
   },
   "sticky-layout#desktop": {
     "props": {
@@ -20,60 +27,68 @@
     "props": {
       "horizontalAlign": "center",
       "verticalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
       "fullWidth": true
     },
     "children": [
-      "flex-layout.col#logo-desktop",
-      "flex-layout.col#spacer",
+      "flex-layout.col#logodesktop",
       "search-bar",
-      "locale-switcher",
-      "login",
-      "minicart.v2"
+      "flex-layout.col#minicart"
     ]
   },
-  "flex-layout.col#spacer": {
+  "flex-layout.col#logodesktop": {
     "props": {
-      "width": "grow"
-    }
-  },
-  "flex-layout.col#logo-desktop": {
-    "props": {
-      "verticalAlign": "middle"
+      "verticalAlign": "middle",
+      "width": "25%"
     },
-    "children": ["logo"]
+    "children": ["logo#desktop"]
   },
-  "logo": {
+  "logo#desktop": {
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
-      "width": "80"
+      "url": "assets/logo.png",
+      "width": "150"
     }
   },
+  // mobile
   "header-layout.mobile": {
     "children": ["sticky-layout#mobile"]
   },
   "sticky-layout#mobile": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
     "children": ["flex-layout.row#mobile"]
   },
   "flex-layout.row#mobile": {
-    "children": [
-      "drawer",
-      "logo",
-      "flex-layout.col#spacer",
-      "login",
-      "minicart.v2"
-    ],
     "props": {
       "blockClass": "main-header-mobile",
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
       "fullWidth": true
-    }
+    },
+    "children": [
+      "flex-layout.col#logomobile",
+      "search-bar",
+      "flex-layout.col#minicart"
+    ]
   },
   "drawer": {
     "children": []
+  },
+  "flex-layout.col#logomobile": {
+    "props": {
+      "verticalAlign": "middle",
+      "width": "30%"
+    },
+    "children": ["logo#mobile"]
+  },
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/logo.png",
+      "width": "80"
+    }
   }
 }
