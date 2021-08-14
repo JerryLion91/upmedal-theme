@@ -1,0 +1,74 @@
+{
+  "store.home": {
+    "blocks": ["tab-layout#home"]
+  },
+  "tab-layout#home": {
+    "children": ["tab-list#home", "slider-layout", "tab-content#home"],
+    "props": {
+      "blockClass": "home",
+      "defaultActiveTabId": "home1"
+    }
+  },
+  "slider-layout": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "autoplay": { "timeout": 7000, "stopOnHover": true },
+      "arrowSize": "15",
+      "blockClass": "carousel"
+    },
+    "children": ["image#banner1", "image#banner2"]
+  },
+
+  "info-card#banner1": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "callToActionMode": "link",
+      "callToActionText": " ",
+      "callToActionUrl": "/",
+      "imageUrl": "assets/BANNER-WOOD.png",
+      "blockClass": "info-card-banner"
+    }
+  },
+  "info-card#banner2": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "callToActionMode": "link",
+      "callToActionText": " ",
+      "callToActionUrl": "/",
+      "imageUrl": "assets/BANNER-WARRIORS.png",
+      "blockClass": "info-card-banner"
+    }
+  },
+
+  "image#banner1": {
+    "props": {
+      "src": "assets/BANNER-WOOD.png",
+      "maxWidth": "80%"
+    }
+  },
+  "image#banner2": {
+    "props": {
+      "src": "assets/BANNER-WARRIORS.png",
+      "maxWidth": "80%"
+    }
+  },
+
+  "rich-text": {
+    "props": {
+      "text": "VTEX Store Framework",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-6"
+    }
+  }
+}
