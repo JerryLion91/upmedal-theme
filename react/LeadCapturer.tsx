@@ -1,5 +1,11 @@
 import * as React from 'react';
 
+interface Lead {
+  name: String;
+  email: String;
+  phone: String;
+}
+
 interface LeadCapturerProps {}
 
 const LeadCapturer: StorefrontFunctionComponent<LeadCapturerProps> = ({}) => {
@@ -8,9 +14,11 @@ const LeadCapturer: StorefrontFunctionComponent<LeadCapturerProps> = ({}) => {
   const handleFormChange = (property: string, value: string) =>
     setLead((prev) => ({ ...prev, [property]: value }));
 
+  const sendLead = (lead: Lead) => console.log({ lead });
+
   const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
-    console.log(lead);
+    sendLead(lead);
   };
 
   return (
