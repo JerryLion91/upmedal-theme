@@ -26,17 +26,29 @@ const LeadCapturer: StorefrontFunctionComponent<LeadCapturerProps> = ({}) => {
       <input
         type="text"
         value={lead.name}
-        onChange={({ target: { value } }) => handleFormChange('name', value)}
+        onChange={({
+          target: { value },
+        }: React.ChangeEvent<HTMLInputElement>) =>
+          handleFormChange('name', value)
+        }
       />
       <input
         type="email"
         value={lead.email}
-        onChange={({ target: { value } }) => handleFormChange('email', value)}
+        onChange={({
+          target: { value },
+        }: React.ChangeEvent<HTMLInputElement>) =>
+          handleFormChange('email', value)
+        }
       />
       <input
         type="phone"
         value={lead.phone}
-        onChange={({ target: { value } }) => handleFormChange('phone', value)}
+        onChange={({
+          target: { value },
+        }: React.ChangeEvent<HTMLInputElement>) =>
+          handleFormChange('phone', value)
+        }
       />
       <input type="submit" />
     </form>
