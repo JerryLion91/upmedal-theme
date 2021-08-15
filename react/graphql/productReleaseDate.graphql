@@ -1,0 +1,10 @@
+input CreateLeadCaptureInput {
+  name: String!
+  email: String!
+  phone: String!
+}
+mutation crudLeads($createleadcaptureinput: CreateLeadCaptureInput!) {
+  createLeadCapture(input: $createleadcaptureinput) {
+    id
+  }
+}

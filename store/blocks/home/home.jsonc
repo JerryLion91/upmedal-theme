@@ -3,7 +3,12 @@
     "blocks": ["tab-layout#home"]
   },
   "tab-layout#home": {
-    "children": ["tab-list#home", "slider-layout", "tab-content#home"],
+    "children": [
+      "tab-list#home",
+      "leadcapturer",
+      "slider-layout",
+      "tab-content#home"
+    ],
     "props": {
       "blockClass": "home",
       "defaultActiveTabId": "home1"
