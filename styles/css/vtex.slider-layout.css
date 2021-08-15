@@ -1,0 +1,13 @@
+.sliderTrack {
+  margin-bottom: 50px;
+}
+.sliderArrows {
+  bottom: 0;
+  color: aliceblue;
+}
+.sliderLeftArrow {
+  left: 10vw;
+}
+.sliderRightArrow {
+  right: 10vw;
+}
