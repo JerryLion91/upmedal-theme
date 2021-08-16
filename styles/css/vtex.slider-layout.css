@@ -1,13 +1,20 @@
-.sliderTrack {
+.sliderTrack--banner {
   margin-bottom: 50px;
 }
-.sliderArrows {
+.sliderArrows--banner {
   bottom: 0;
   color: aliceblue;
 }
-.sliderLeftArrow {
+.sliderLeftArrow--banner {
   left: 10vw;
 }
-.sliderRightArrow {
+.sliderRightArrow--banner {
   right: 10vw;
+}
+.sliderTrackContainer--tablistslider {
+  background-color: #212121;
+}
+
+.sliderArrows--tablistslider {
+  color: aliceblue;
 }

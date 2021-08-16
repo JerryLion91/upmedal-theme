@@ -79,7 +79,7 @@
   "semanticColors": {
     "background": {
       "base": "#303030",
-      "base--inverted": "#2C2C34",
+      "base--inverted": "#212121",
       "action-primary": "#4CFC0C",
       "action-secondary": "#eef3f7",
       "emphasis": "#59ff00",
@@ -113,7 +113,7 @@
       "muted-5": "#f2f4f5"
     },
     "active-background": {
-      "action-primary": "##04B304",
+      "action-primary": "#04B304",
       "action-secondary": "#94EC94",
       "emphasis": "#dd1659",
       "success": "#8bc34a",
@@ -129,8 +129,8 @@
       "muted-5": "#f2f4f5"
     },
     "text": {
-      "action-primary": "#4CFC0C",
-      "action-secondary": "#eef3f7",
+      "action-primary": "#eef3f7",
+      "action-secondary": "#4CFC0C",
       "link": "#4CFC0C",
       "emphasis": "#59ff00",
       "disabled": "#979899",
