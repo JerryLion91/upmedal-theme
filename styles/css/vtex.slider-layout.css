@@ -1,4 +1,5 @@
 .sliderTrack--banner {
+  margin-top: 2vh;
   margin-bottom: 50px;
 }
 .sliderArrows--banner {
@@ -10,9 +11,6 @@
 }
 .sliderRightArrow--banner {
   right: 10vw;
-}
-.sliderTrackContainer--tablistslider {
-  background-color: #212121;
 }
 
 .sliderArrows--tablistslider {

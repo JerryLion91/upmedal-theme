@@ -1,0 +1,10 @@
+.flexRowContent--tab-list {
+  background-color: #212121;
+}
+.flexColChild--bottom-button {
+  color: #fff;
+  cursor: pointer;
+}
+.flexCol--bottom-button {
+  padding: 10px;
+}
