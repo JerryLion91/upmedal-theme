@@ -8,15 +8,16 @@
       "tab-list.item#home5",
       "tab-list.item#home6"
     ]
-    // "blockClass": ""
   },
   "tab-list.item#home1": {
     "props": {
       "tabId": "promo",
       "label": "Promocao",
-      "defaultActiveTab": true
+      "defaultActiveTab": true,
+      "blockClass": "tab-list-home-button"
     }
   },
+
   "tab-list.item#home2": {
     "props": {
       "tabId": "corinthians",
@@ -48,18 +49,78 @@
     }
   },
   "tab-content#home": {
-    "children": ["tab-content.item#home1", "tab-content.item#home2"]
+    "children": [
+      "tab-content.item#home1",
+      "tab-content.item#home2",
+      "tab-content.item#home3",
+      "tab-content.item#home4",
+      "tab-content.item#home5",
+      "tab-content.item#home6"
+    ]
   },
   "tab-content.item#home1": {
-    "children": ["rich-text"],
+    "children": ["search-result-layout.customQuery#promo"],
     "props": {
-      "tabId": "home1"
+      "tabId": "promo"
     }
   },
   "tab-content.item#home2": {
     "children": ["rich-text"],
     "props": {
-      "tabId": "home2"
+      "tabId": "corinthians"
     }
+  },
+  "tab-content.item#home3": {
+    "children": ["rich-text"],
+    "props": {
+      "tabId": "palmeiras"
+    }
+  },
+  "tab-content.item#home4": {
+    "children": ["rich-text"],
+    "props": {
+      "tabId": "divertidos"
+    }
+  },
+  "tab-content.item#home5": {
+    "children": ["rich-text"],
+    "props": {
+      "tabId": "maravilhas"
+    }
+  },
+  "tab-content.item#home6": {
+    "children": ["rich-text"],
+    "props": {
+      "tabId": "guerreiros"
+    }
+  },
+  "rich-text": {
+    "props": {
+      "text": "VTEX Store Framework",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-6"
+    }
+  },
+  "search-result-layout.customQuery#promo": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        // "queryField": "Camera",
+        // "mapField": "ft",
+        "skusFilter": "ALL_AVAILABLE"
+      }
+      // "hiddenFacets": {
+      //   "brands": true,
+      //   "categories": true,
+      //   "priceRange": true,
+      //   "specificationFilters": {
+      //     "hideAll": true
+      //   }
+      // }
+    },
+    "blocks": ["search-result-layout.desktop"]
   }
 }
