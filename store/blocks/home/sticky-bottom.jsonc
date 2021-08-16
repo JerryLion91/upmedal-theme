@@ -1,0 +1,82 @@
+{
+  "sticky-layout#bottom-menu": {
+    "props": {
+      "position": "bottom",
+      "verticalSpacing": 0,
+      "blockClass": "bottom-menu"
+    },
+    "children": ["flex-layout.row#modal-trigger"]
+  },
+  "flex-layout.row#modal-trigger": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["modal-trigger#gift-trap", "modal-trigger#whatsapp"]
+  },
+  // modals
+  "modal-trigger#gift-trap": {
+    "children": ["flex-layout.col#gift-trap", "modal-layout#gift-trap"]
+  },
+  "modal-trigger#whatsapp": {
+    "children": ["flex-layout.col#whatsapp", "modal-layout#whatsapp"]
+  },
+  // buttons
+  "flex-layout.col#gift-trap": {
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "center",
+      "blockClass": "bottom-button"
+    },
+    "children": ["icon#gift", "rich-text#gift-trap"]
+  },
+  "flex-layout.col#whatsapp": {
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "center",
+      "blockClass": "bottom-button"
+    },
+    "children": ["icon#whatsapp", "rich-text#whatsapp"]
+  },
+  // modals contantes
+  "modal-layout#whatsapp": {
+    "children": ["rich-text#modal-content"]
+  },
+  "modal-layout#gift-trap": {
+    "children": ["leadcapturer"]
+  },
+  // modal content resource
+  
+  "rich-text#modal-content": {
+    "props": {
+      "text": "Hello"
+    }
+  },
+  // buttons resources
+  "icon#whatsapp": {
+    "props": {
+      "id": "whats-app",
+      "size": 24,
+      "viewBox": "0 0 24 24",
+      "isActive": true
+    }
+  },
+  "rich-text#whatsapp": {
+    "props": {
+      "text": "Suporte",
+      "blockClass": "bottom-button-text"
+    }
+  },
+  "icon#gift": {
+    "props": {
+      "id": "mpa-bag",
+      "size": 24,
+      "isActive": true
+    }
+  },
+  "rich-text#gift-trap": {
+    "props": {
+      "text": "Presente",
+      "blockClass": "bottom-button-text"
+    }
+  }
+}
