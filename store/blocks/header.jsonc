@@ -9,7 +9,7 @@
   "flex-layout.col#minicart": {
     "props": {
       "horizontalAlign": "center",
-      "width": "30%"
+      "width": "25%"
     },
     "children": ["minicart.v2"]
   },
@@ -27,7 +27,8 @@
     "props": {
       "horizontalAlign": "center",
       "verticalAlign": "center",
-      "fullWidth": true
+      "fullWidth": true,
+      "blockClass": "header-desktop"
     },
     "children": [
       "flex-layout.col#logodesktop",
@@ -62,8 +63,8 @@
   },
   "flex-layout.row#mobile": {
     "props": {
-      "blockClass": "main-header-mobile",
-      "preventHorizontalStretch": true,
+      "blockClass": "header-mobile",
+      // "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
       "fullWidth": true
     },
@@ -79,7 +80,7 @@
   "flex-layout.col#logomobile": {
     "props": {
       "verticalAlign": "middle",
-      "width": "30%"
+      "width": "25%"
     },
     "children": ["logo#mobile"]
   },
