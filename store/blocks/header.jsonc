@@ -15,9 +15,9 @@
   },
   // Desktop:
   "header-layout.desktop": {
-    "children": ["sticky-layout#desktop"]
+    "children": ["sticky-layout#header-desktop"]
   },
-  "sticky-layout#desktop": {
+  "sticky-layout#header-desktop": {
     "props": {
       "blockClass": "sticky-header"
     },

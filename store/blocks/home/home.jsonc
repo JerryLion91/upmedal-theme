@@ -4,19 +4,39 @@
   },
   "tab-layout#home": {
     "children": [
-      "slider-layout#tab-list",
+      "stack-layout#menus",
       "slider-layout#banners",
-      "tab-content#home"
+      "tab-content#home",
+      "link"
     ],
     "props": {
       "blockClass": "home",
       "defaultActiveTabId": "promo"
     }
   },
+  "stack-layout#menus": {
+    "children": ["sticky-layout#tab-list", "sticky-layout#bottom-menu"]
+  },
+  "flex-layout.row#tab-list": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "fullWidth": true,
+      "blockClass": "tab-list"
+    },
+    "children": ["slider-layout#tab-list"]
+  },
+  "sticky-layout#tab-list": {
+    "props": {
+      "position": "top",
+      "verticalSpacing": 64
+    },
+    "children": ["flex-layout.row#tab-list"]
+  },
   "slider-layout#tab-list": {
     "props": {
       "label": "tab-list",
-      "showNavigationArrows": "always",
+      "showNavigationArrows": "desktopOnly",
       "showPaginationDots": "never",
       "infinite": false,
       "usePagination": true,
@@ -28,15 +48,14 @@
         "phone": 2
       },
       "arrowSize": "10",
-      "blockClass": "tablistslider"
+      "blockClass": "tab-list-slider"
     },
     "children": [
       "tab-list.item#home1",
       "tab-list.item#home2",
       "tab-list.item#home3",
       "tab-list.item#home4",
-      "tab-list.item#home5",
-      "tab-list.item#home6"
+      "tab-list.item#home5"
     ]
   },
   "slider-layout#banners": {

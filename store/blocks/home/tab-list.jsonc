@@ -5,8 +5,7 @@
       "tab-list.item#home2",
       "tab-list.item#home3",
       "tab-list.item#home4",
-      "tab-list.item#home5",
-      "tab-list.item#home6"
+      "tab-list.item#home5"
     ]
   },
   "tab-list.item#home1": {
@@ -17,7 +16,6 @@
       "blockClass": "tab-list-home-button"
     }
   },
-
   "tab-list.item#home2": {
     "props": {
       "tabId": "corinthians",
@@ -32,17 +30,11 @@
   },
   "tab-list.item#home4": {
     "props": {
-      "tabId": "divertidos",
-      "label": "Divertidos"
+      "tabId": "signos",
+      "label": "Signos"
     }
   },
   "tab-list.item#home5": {
-    "props": {
-      "tabId": "maravilhas",
-      "label": "7 Maravilhas"
-    }
-  },
-  "tab-list.item#home6": {
     "props": {
       "tabId": "guerreiros",
       "label": "Guerreiros"
@@ -54,8 +46,7 @@
       "tab-content.item#home2",
       "tab-content.item#home3",
       "tab-content.item#home4",
-      "tab-content.item#home5",
-      "tab-content.item#home6"
+      "tab-content.item#home5"
     ]
   },
   "tab-content.item#home1": {
@@ -65,31 +56,25 @@
     }
   },
   "tab-content.item#home2": {
-    "children": ["rich-text"],
+    "children": ["search-result-layout.customQuery#corinthians"],
     "props": {
       "tabId": "corinthians"
     }
   },
   "tab-content.item#home3": {
-    "children": ["rich-text"],
+    "children": ["search-result-layout.customQuery#palmeiras"],
     "props": {
       "tabId": "palmeiras"
     }
   },
   "tab-content.item#home4": {
-    "children": ["rich-text"],
+    "children": ["search-result-layout.customQuery#signos"],
     "props": {
-      "tabId": "divertidos"
+      "tabId": "signos"
     }
   },
   "tab-content.item#home5": {
-    "children": ["rich-text"],
-    "props": {
-      "tabId": "maravilhas"
-    }
-  },
-  "tab-content.item#home6": {
-    "children": ["rich-text"],
+    "children": ["search-result-layout.customQuery#guerreiros"],
     "props": {
       "tabId": "guerreiros"
     }
@@ -108,19 +93,63 @@
         "orderByField": "OrderByReleaseDateDESC",
         "hideUnavailableItems": true,
         "maxItemsPerPage": 8,
-        // "queryField": "Camera",
-        // "mapField": "ft",
+        "queryField": "UpMedal Promo",
+        "mapField": "ft",
         "skusFilter": "ALL_AVAILABLE"
       }
-      // "hiddenFacets": {
-      //   "brands": true,
-      //   "categories": true,
-      //   "priceRange": true,
-      //   "specificationFilters": {
-      //     "hideAll": true
-      //   }
-      // }
     },
-    "blocks": ["search-result-layout.desktop"]
+    "blocks": ["search-result-layout.desktop#home"]
+  },
+  "search-result-layout.customQuery#corinthians": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "queryField": "UpMedal Promo",
+        "mapField": "ft",
+        "skusFilter": "ALL_AVAILABLE"
+      }
+    },
+    "blocks": ["search-result-layout.desktop#home"]
+  },
+  "search-result-layout.customQuery#palmeiras": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "queryField": "UpMedal Promo",
+        "mapField": "ft",
+        "skusFilter": "ALL_AVAILABLE"
+      }
+    },
+    "blocks": ["search-result-layout.desktop#home"]
+  },
+  "search-result-layout.customQuery#signos": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "queryField": "UpMedal Promo",
+        "mapField": "ft",
+        "skusFilter": "ALL_AVAILABLE"
+      }
+    },
+    "blocks": ["search-result-layout.desktop#home"]
+  },
+  "search-result-layout.customQuery#guerreiros": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "queryField": "UpMedal Promo",
+        "mapField": "ft",
+        "skusFilter": "ALL_AVAILABLE"
+      }
+    },
+    "blocks": ["search-result-layout.desktop#home"]
   }
 }
