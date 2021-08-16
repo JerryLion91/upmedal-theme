@@ -1,7 +1,106 @@
 {
   "store.search": {
+    "blocks": ["search-result-layout"],
+    "props": {
+      "context": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip"
+      }
+    }
+  },
+  "search-result-layout": {
     "blocks": [
-      
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.desktop": {
+    "children": [
+      "breadcrumb.search",
+      "search-title.v2",
+      "flex-layout.row#top",
+      "search-fetch-previous",
+      "flex-layout.row#results",
+      "search-fetch-more"
+    ],
+    "props": {
+      "pagination": "showMore"
+    }
+  },
+  "flex-layout.row#top": {
+    "children": ["total-products.v2", "order-by.v2"]
+  },
+  "flex-layout.row#results": {
+    "children": ["flex-layout.col#filter", "flex-layout.col#search"]
+  },
+  "flex-layout.col#filter": {
+    "props": {
+      "width": "20%"
+    },
+    "children": ["filter-navigator.v3"]
+  },
+  "flex-layout.col#search": {
+    "children": ["search-content"]
+  },
+  "search-result-layout.desktop#home": {
+    "children": [
+      "flex-layout.row#homesearchtop",
+      "search-fetch-previous",
+      "flex-layout.row#homesearch",
+      "search-fetch-more"
+    ],
+    "props": {
+      "defaultGalleryLayout": "many"
+    }
+  },
+  "flex-layout.row#homesearchtop": {
+    "children": ["order-by.v2"]
+  },
+  "flex-layout.row#homesearch": {
+    "children": ["search-content"],
+    "props": {
+      "blockClass": "kk"
+    }
+  },
+  "search-content": {
+    "blocks": ["gallery", "not-found"]
+  },
+  "gallery": {
+    "props": {
+      "layouts": [
+        {
+          "name": "whole",
+          "component": "OneOrTwoLineSummary",
+          "itemsPerRow": 1
+        },
+        {
+          "name": "two",
+          "component": "OneOrTwoLineSummary",
+          "itemsPerRow": 2
+        },
+        {
+          "name": "many",
+          "component": "ManyByLineSummary",
+          "itemsPerRow": {
+            "desktop": 2,
+            "tablet": 2,
+            "mobile": 1
+          }
+        }
+      ],
+      "OneOrTwoLineSummary": "product-summary.shelf",
+      "ManyByLineSummary": "product-summary.shelf#search"
+    }
+  },
+  "product-summary.shelf#search": {
+    "children": [
+      "product-summary-name",
+      "product-summary-image",
+      "product-summary-description",
+      "product-summary-price",
+      "product-summary-buy-button",
+      "product-summary-sku-selector"
     ]
   }
 }
