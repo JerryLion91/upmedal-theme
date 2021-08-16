@@ -4,17 +4,42 @@
   },
   "tab-layout#home": {
     "children": [
-      "tab-list#home",
-      "leadcapturer",
-      "slider-layout",
+      "slider-layout#tab-list",
+      "slider-layout#banners",
       "tab-content#home"
     ],
     "props": {
       "blockClass": "home",
-      "defaultActiveTabId": "home1"
+      "defaultActiveTabId": "promo"
     }
   },
-  "slider-layout": {
+  "slider-layout#tab-list": {
+    "props": {
+      "label": "tab-list",
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "infinite": false,
+      "usePagination": true,
+      "navigationStep": 1,
+      "centerMode": "to-the-left",
+      "itemsPerPage": {
+        "desktop": 7,
+        "tablet": 4,
+        "phone": 2
+      },
+      "arrowSize": "10",
+      "blockClass": "tablistslider"
+    },
+    "children": [
+      "tab-list.item#home1",
+      "tab-list.item#home2",
+      "tab-list.item#home3",
+      "tab-list.item#home4",
+      "tab-list.item#home5",
+      "tab-list.item#home6"
+    ]
+  },
+  "slider-layout#banners": {
     "props": {
       "itemsPerPage": {
         "desktop": 1,
@@ -23,13 +48,15 @@
       },
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
-      "autoplay": { "timeout": 7000, "stopOnHover": true },
+      "autoplay": {
+        "timeout": 7000,
+        "stopOnHover": true
+      },
       "arrowSize": "15",
-      "blockClass": "carousel"
+      "blockClass": "banner"
     },
     "children": ["image#banner1", "image#banner2"]
   },
-
   "info-card#banner1": {
     "props": {
       "id": "info-card-example",
@@ -54,7 +81,6 @@
       "blockClass": "info-card-banner"
     }
   },
-
   "image#banner1": {
     "props": {
       "src": "assets/BANNER-WOOD.png",
@@ -65,15 +91,6 @@
     "props": {
       "src": "assets/BANNER-WARRIORS.png",
       "maxWidth": "80%"
-    }
-  },
-
-  "rich-text": {
-    "props": {
-      "text": "VTEX Store Framework",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-6"
     }
   }
 }
