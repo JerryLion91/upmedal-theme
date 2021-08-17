@@ -2,9 +2,11 @@
   background-color: #424242;
   width: 281px;
 }
+.productNameContainer {
+  padding: 0px 10px;
+}
 .brandName {
   color: #fff;
-  margin: 0px 10px;
 }
 .image {
   border-radius: 0;
@@ -16,6 +18,7 @@
   margin: 0 10%;
 }
 .buyButton :global(.vtex-button) {
+  color: #000;
   font-size: 0.8em;
 }
 .description {
