@@ -6,14 +6,14 @@
     "children": [
       "stack-layout#menus",
       "slider-layout#banners",
-      "tab-content#home",
-      "link"
+      "tab-content#home"
     ],
     "props": {
       "blockClass": "home",
       "defaultActiveTabId": "promo"
     }
   },
+
   "stack-layout#menus": {
     "children": ["sticky-layout#tab-list", "sticky-layout#bottom-menu"]
   },
@@ -29,7 +29,8 @@
   "sticky-layout#tab-list": {
     "props": {
       "position": "top",
-      "verticalSpacing": 64
+      "verticalSpacing": 64,
+      "blockClass": "tab-list"
     },
     "children": ["flex-layout.row#tab-list"]
   },

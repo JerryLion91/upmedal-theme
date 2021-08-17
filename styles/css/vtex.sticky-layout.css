@@ -5,3 +5,6 @@
 .container--bottom-menu {
   background-color: #212121;
 }
+.container--tab-list {
+  z-index: 1;
+}
