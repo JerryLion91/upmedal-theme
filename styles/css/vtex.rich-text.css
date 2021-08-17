@@ -2,3 +2,7 @@
   margin: 0;
   text-transform: uppercase;
 }
+.paragraph--copyright-text {
+  margin: 20px;
+  margin-bottom: 80px;
+}
