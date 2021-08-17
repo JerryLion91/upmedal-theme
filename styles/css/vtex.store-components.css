@@ -1,7 +1,30 @@
 .searchBarIcon {
-  color: #f4f4f4;
+  color: #727273;
 }
 
 .imageElement {
   border-radius: 25px;
+}
+
+.autoCompleteOuterContainer :global(.vtex-input-prefix__group) {
+  padding: 0px;
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid #4cfc0c;
+}
+.autoCompleteOuterContainer :global(.vtex-input-prefix__group):hover {
+  border-bottom: 3px solid #4cfc0c;
+}
+
+.autoCompleteOuterContainer :global(.vtex-input__suffix),
+.autoCompleteOuterContainer :global(.vtex-styleguide-9-x-input) {
+  /* font-size: 1.2em; */
+  text-transform: uppercase;
+  border-radius: 0;
+  background-color: #212121;
+}
+.autoCompleteOuterContainer :global(.vtex-styleguide-9-x-input) {
+  padding: 0;
+  color: #fff;
+  z-index: -1;
 }
