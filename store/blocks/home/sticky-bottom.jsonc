@@ -11,7 +11,7 @@
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["modal-trigger#gift-trap", "modal-trigger#whatsapp"]
+    "children": ["modal-trigger#gift-trap", "link#whatsApp"]
   },
   // modals
   "modal-trigger#gift-trap": {
@@ -45,7 +45,7 @@
     "children": ["leadcapturer"]
   },
   // modal content resource
-  
+
   "rich-text#modal-content": {
     "props": {
       "text": "Hello"
@@ -78,5 +78,12 @@
       "text": "Presente",
       "blockClass": "bottom-button-text"
     }
+  },
+  "link#whatsApp": {
+    "props": {
+      "href": "https://api.whatsapp.com/send?phone=5511964335064&text=Para%20falar%20com%20a%20Gabi%2C%20clique%20%22Enviar%20Mensagem%22",
+      "target": "_blank"
+    },
+    "children": ["flex-layout.col#whatsapp"]
   }
 }
