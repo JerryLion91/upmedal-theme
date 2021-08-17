@@ -3,18 +3,46 @@
     "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
   },
   "footer-layout.desktop": {
-    "children": ["flex-layout.row#footer"]
+    "children": ["flex-layout.row#footer", "rich-text#copyright"]
   },
   "footer-layout.mobile": {
-    "children": ["flex-layout.row#footer"]
+    "children": ["flex-layout.row#footer", "rich-text#copyright"]
   },
   "flex-layout.row#footer": {
+    "children": ["flex-layout.col#footer-left", "flex-layout.col#footer-right"],
+    "props": { "blockClass": "copyright-text" }
+  },
+
+  "flex-layout.col#footer-left": {
+    "children": ["rich-text#upmedal", "rich-text#description"]
+  },
+  "flex-layout.col#footer-right": {
     "children": ["rich-text"]
   },
-  "image": {
+  "rich-text": {
     "props": {
-      "width": 100,
-      "src": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg"
+      "text": "VTEX Store Framework",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-6"
+    }
+  },
+  "rich-text#upmedal": {
+    "props": {
+      "text": "**Loja UpMedal**",
+      "textColor": "c-on-action-secondary",
+      "font": "t-heading-6"
+    }
+  },
+  "rich-text#description": {
+    "props": {
+      "text": "*Loja construida para o Desafio#3 Hiring Coders#2*"
+    }
+  },
+  "rich-text#copyright": {
+    "props": {
+      "text": "© 2021 JerryLion91",
+      "blockClass": "copyright-text"
     }
   }
 }
