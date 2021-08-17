@@ -79,23 +79,14 @@
       "tabId": "guerreiros"
     }
   },
-  "rich-text": {
-    "props": {
-      "text": "VTEX Store Framework",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-6"
-    }
-  },
   "search-result-layout.customQuery#promo": {
     "props": {
       "querySchema": {
-        "orderByField": "OrderByReleaseDateDESC",
-        "hideUnavailableItems": true,
+        "orderByField": "OrderByScoreDESC",
+        "hideUnavailableItems": false,
         "maxItemsPerPage": 8,
-        "queryField": "UpMedal Promo",
-        "mapField": "ft",
-        "skusFilter": "ALL_AVAILABLE"
+        "queryField": "UpMedal",
+        "mapField": "ft"
       }
     },
     "blocks": ["search-result-layout.desktop#home"]
@@ -104,11 +95,10 @@
     "props": {
       "querySchema": {
         "orderByField": "OrderByReleaseDateDESC",
-        "hideUnavailableItems": true,
+        "hideUnavailableItems": false,
         "maxItemsPerPage": 8,
-        "queryField": "UpMedal Promo",
-        "mapField": "ft",
-        "skusFilter": "ALL_AVAILABLE"
+        "queryField": "kit-upmedal/corinthians",
+        "mapField": "fq"
       }
     },
     "blocks": ["search-result-layout.desktop#home"]
@@ -117,11 +107,10 @@
     "props": {
       "querySchema": {
         "orderByField": "OrderByReleaseDateDESC",
-        "hideUnavailableItems": true,
+        "hideUnavailableItems": false,
         "maxItemsPerPage": 8,
-        "queryField": "UpMedal Promo",
-        "mapField": "ft",
-        "skusFilter": "ALL_AVAILABLE"
+        "queryField": "kit-upmedal/palmeiras",
+        "mapField": "fq"
       }
     },
     "blocks": ["search-result-layout.desktop#home"]
@@ -130,11 +119,10 @@
     "props": {
       "querySchema": {
         "orderByField": "OrderByReleaseDateDESC",
-        "hideUnavailableItems": true,
+        "hideUnavailableItems": false,
         "maxItemsPerPage": 8,
-        "queryField": "UpMedal Promo",
-        "mapField": "ft",
-        "skusFilter": "ALL_AVAILABLE"
+        "queryField": "kit-upmedal/signos",
+        "mapField": "fq"
       }
     },
     "blocks": ["search-result-layout.desktop#home"]
@@ -143,11 +131,10 @@
     "props": {
       "querySchema": {
         "orderByField": "OrderByReleaseDateDESC",
-        "hideUnavailableItems": true,
+        "hideUnavailableItems": false,
         "maxItemsPerPage": 8,
-        "queryField": "UpMedal Promo",
-        "mapField": "ft",
-        "skusFilter": "ALL_AVAILABLE"
+        "queryField": "kit-upmedal/guerreiros",
+        "mapField": "fq"
       }
     },
     "blocks": ["search-result-layout.desktop#home"]
