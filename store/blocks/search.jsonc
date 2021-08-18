@@ -89,7 +89,7 @@
           }
         }
       ],
-      "OneOrTwoLineSummary": "product-summary.shelf",
+      "OneOrTwoLineSummary": "product-summary.shelf#search",
       "ManyByLineSummary": "product-summary.shelf#search"
     }
   },
