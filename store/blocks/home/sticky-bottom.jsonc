@@ -1,15 +1,8 @@
 {
-  "sticky-layout#bottom-menu": {
-    "props": {
-      "position": "bottom",
-      "verticalSpacing": 0,
-      "blockClass": "bottom-menu"
-    },
-    "children": ["flex-layout.row#modal-trigger"]
-  },
   "flex-layout.row#modal-trigger": {
     "props": {
-      "verticalAlign": "middle"
+      "verticalAlign": "middle",
+      "blockClass": "bottom-menu"
     },
     "children": ["modal-trigger#gift-trap", "link#whatsApp"]
   },

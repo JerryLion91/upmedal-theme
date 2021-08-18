@@ -15,7 +15,7 @@
   },
 
   "stack-layout#menus": {
-    "children": ["sticky-layout#tab-list", "sticky-layout#bottom-menu"]
+    "children": ["sticky-layout#tab-list", "flex-layout.row#modal-trigger"]
   },
   "flex-layout.row#tab-list": {
     "props": {
@@ -75,7 +75,21 @@
       "arrowSize": "15",
       "blockClass": "banner"
     },
-    "children": ["image#banner1", "image#banner2"]
+    "children": ["link#banner1", "link#banner2"]
+  },
+  "link#banner1": {
+    "props": {
+      "href": "/woodtrophie/p",
+      "blockClass": "link-banner"
+    },
+    "children": ["image#banner1"]
+  },
+  "link#banner2": {
+    "props": {
+      "href": "/arqueiro/p",
+      "blockClass": "link-banner"
+    },
+    "children": ["image#banner2"]
   },
   "info-card#banner1": {
     "props": {
