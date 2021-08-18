@@ -1,19 +1,9 @@
 {
-  "tab-list#home": {
-    "children": [
-      "tab-list.item#home1",
-      "tab-list.item#home2",
-      "tab-list.item#home3",
-      "tab-list.item#home4",
-      "tab-list.item#home5"
-    ]
-  },
   "tab-list.item#home1": {
     "props": {
       "tabId": "promo",
       "label": "Promocao",
-      "defaultActiveTab": true,
-      "blockClass": "tab-list-home-button"
+      "defaultActiveTab": true
     }
   },
   "tab-list.item#home2": {
