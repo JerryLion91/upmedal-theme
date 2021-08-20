@@ -4,7 +4,7 @@
 }
 .sliderArrows--banner {
   bottom: 0;
-  color: aliceblue;
+  color: #eef3f7;
 }
 .sliderLeftArrow--banner {
   left: 10vw;
@@ -14,5 +14,5 @@
 }
 
 .sliderArrows--tablistslider {
-  color: aliceblue;
+  color: #eef3f7;
 }

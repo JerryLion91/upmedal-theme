@@ -5,7 +5,9 @@
 .imageElement {
   border-radius: 25px;
 }
-
+.discountInsideContainer {
+  color: #000;
+}
 .autoCompleteOuterContainer :global(.vtex-input-prefix__group) {
   padding: 0px;
   border: none;
@@ -25,6 +27,6 @@
 }
 .autoCompleteOuterContainer :global(.vtex-styleguide-9-x-input) {
   padding: 0;
-  color: #fff;
+  color: #eef3f7;
   z-index: -1;
 }
