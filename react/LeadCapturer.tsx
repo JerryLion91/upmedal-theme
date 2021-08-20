@@ -1,14 +1,14 @@
 import * as React from 'react';
+import http from './Clients/AWSClient';
 
 interface Lead {
   name: String;
   email: String;
   phone: String;
 }
-
 interface LeadCapturerProps {}
 
-const LeadCapturer: StorefrontFunctionComponent<LeadCapturerProps> = ({}) => {
+const LeadCapturer: StorefrontFunctionComponent<LeadCapturerProps> = () => {
   const [sended, setSended] = React.useState(false);
 
   const [lead, setLead] = React.useState({ name: '', email: '', phone: '' });
@@ -16,13 +16,24 @@ const LeadCapturer: StorefrontFunctionComponent<LeadCapturerProps> = ({}) => {
   const handleFormChange = (property: string, value: string) =>
     setLead((prev) => ({ ...prev, [property]: value }));
 
-  const sendLead = (lead: Lead) => console.log({ lead });
+  const sendLead = (lead: Lead) => {
+    http
+      .post('/dev', {
+        TableName: 'LeadCaptureTable',
+        Item: lead,
+      })
+      .then(({ data }) => {
+        return console.log(data);
+      })
+      .catch((err) => console.log(err));
+  };
 
   const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
     sendLead(lead);
     setSended(true);
   };
+
   if (sended)
     return (
       <div className="c-action-primary overflow-hidden br3 h-100 w-100 flex flex-column justify-between center tc">
