@@ -27,6 +27,7 @@ $RECYCLE.BIN/
 
 # App specific
 react/node_modules/
+react/Clients/AWSconfig.ts
 node_modules/
 docs/_book/
 .tmp
