@@ -2,9 +2,13 @@
   background-color: #212121;
 }
 .flexColChild--bottom-button {
-  color: #fff;
+  color: #eef3f7;
   cursor: pointer;
 }
-.flexCol--bottom-button {
+.flexRow--bottom-menu {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: #212121;
   padding: 10px;
 }
