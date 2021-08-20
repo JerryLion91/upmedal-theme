@@ -1,7 +1,4 @@
 {
-  "header": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
-  },
   "header.full": {
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
@@ -27,8 +24,7 @@
     "props": {
       "horizontalAlign": "center",
       "verticalAlign": "center",
-      "fullWidth": true,
-      "blockClass": "header-desktop"
+      "fullWidth": true
     },
     "children": [
       "flex-layout.col#logodesktop",
@@ -64,7 +60,6 @@
   "flex-layout.row#mobile": {
     "props": {
       "blockClass": "header-mobile",
-      // "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
       "fullWidth": true
     },
@@ -80,7 +75,7 @@
   "flex-layout.col#logomobile": {
     "props": {
       "verticalAlign": "middle",
-      "width": "25%"
+      "width": "30%"
     },
     "children": ["logo#mobile"]
   },
