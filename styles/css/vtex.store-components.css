@@ -30,3 +30,11 @@
   color: #eef3f7;
   z-index: -1;
 }
+.productBrand {
+  color: #eef3f7;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.productDescriptionText {
+  color: #eef3f7;
+}

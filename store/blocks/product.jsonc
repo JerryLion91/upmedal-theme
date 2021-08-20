@@ -3,7 +3,7 @@
     "children": [
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main",
-      // "flex-layout.row#details",
+      "flex-layout.row#product-display",
       "flex-layout.row#description",
       "product-questions-and-answers"
     ]
@@ -15,10 +15,36 @@
     },
     "children": ["breadcrumb"]
   },
-  "flex-layout.row#description": {
+  "flex-layout.row#product-display": {
     "props": {
       "marginBottom": 7
     },
+    "children": ["flex-layout.col#product-name", "flex-layout.col#price"]
+  },
+  "flex-layout.col#product-name": {
+    "children": ["vtex.store-components:product-name"],
+    "props": {
+      "width": "70%",
+      "rowGap": 0
+    }
+  },
+  "flex-layout.col#price": {
+    "children": [
+      "flex-layout.row#selling-price",
+      "product-installments",
+      "flex-layout.row#buy-button"
+    ],
+    "props": {
+      "width": "30%",
+      "rowGap": 0
+    }
+  },
+  "flex-layout.row#description": {
+    "props": {
+      "marginBottom": 7,
+      "blockClass": "product-description"
+    },
+
     "children": ["product-description"]
   },
   "flex-layout.row#product-main": {
@@ -58,22 +84,7 @@
       "preventVerticalStretch": true,
       "rowGap": 0
     },
-    "children": [
-      "flex-layout.row#product-name",
-      "product-rating-summary",
-      // "flex-layout.row#list-price-savings",
-      "flex-layout.row#selling-price",
-      "product-installments",
-      "product-separator",
-      // "product-identifier.product"
-      "sku-selector",
-      "product-quantity",
-      // "product-assembly-options",
-      // "product-gifts",
-      "flex-layout.row#buy-button",
-      // "availability-subscriber",
-      "shipping-simulator"
-    ]
+    "children": []
   },
 
   "flex-layout.row#product-name": {
@@ -86,7 +97,8 @@
   "flex-layout.row#buy-button": {
     "props": {
       "marginTop": 4,
-      "marginBottom": 7
+      "marginBottom": 7,
+      "blockClass": "add-to-cart-button"
     },
     "children": ["add-to-cart-button"]
   },
