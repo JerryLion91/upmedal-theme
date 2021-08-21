@@ -1,0 +1,9 @@
+.minicartCheckoutButton :global(.vtex-button) {
+  color: #000;
+}
+.summarySmallDisclaimer {
+  color: #eef3f7;
+}
+.summarySmallContent {
+  color: #eef3f7;
+}

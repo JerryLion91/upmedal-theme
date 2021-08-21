@@ -19,7 +19,7 @@ const AdminLeads: FC = () => {
         subtitle="Leads Captured by the form."
         variation="full"
       >
-        <h1>Hello, World!</h1>
+        <h1>All captured leads!</h1>
         {leads.map((el, index) => {
           console.log(el);
           return (
