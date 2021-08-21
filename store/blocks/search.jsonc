@@ -89,11 +89,11 @@
           }
         }
       ],
-      "OneOrTwoLineSummary": "product-summary.shelf#search",
-      "ManyByLineSummary": "product-summary.shelf#search"
+      "OneOrTwoLineSummary": "product-summary.shelf#customQuery",
+      "ManyByLineSummary": "product-summary.shelf#customQuery"
     }
   },
-  "product-summary.shelf#search": {
+  "product-summary.shelf#customQuery": {
     "children": [
       "product-summary-name",
       "product-summary-image",
