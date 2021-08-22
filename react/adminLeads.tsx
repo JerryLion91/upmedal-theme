@@ -20,17 +20,19 @@ const AdminLeads: FC = () => {
         variation="full"
       >
         <h1>All captured leads!</h1>
-        {leads.map((el, index) => {
-          console.log(el);
-          return (
-            <div key={index} className="flex">
-              <p className="w-7">{index + 1}: </p>
-              <p className="w-25">{`Nome: ${el.name}`}</p>
-              <p className="w-40">{`E-mail: ${el.email}`}</p>
-              <p className="w-30">{`Phone: ${el.phone}`}</p>
-            </div>
-          );
-        })}
+        {leads.map(
+          (el: { name: string; email: string; phone: string }, index) => {
+            console.log(el);
+            return (
+              <div key={index} className="flex">
+                <p className="w-7">{index + 1}: </p>
+                <p className="w-25">{`Nome: ${el.name}`}</p>
+                <p className="w-40">{`E-mail: ${el.email}`}</p>
+                <p className="w-30">{`Phone: ${el.phone}`}</p>
+              </div>
+            );
+          }
+        )}
       </PageBlock>
     </Layout>
   );
